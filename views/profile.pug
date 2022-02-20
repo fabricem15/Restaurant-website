@@ -1,0 +1,46 @@
+html 
+    head 
+        link(rel = "stylesheet" href="../css/users.css")
+        title Profile Page
+        link(href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet")
+        link(rel='apple-touch-icon' sizes='180x180' href='/favicon_io/apple-touch-icon.png')
+        link(rel='icon' type='image/png' sizes='32x32' href='/favicon_io/favicon-32x32.png')
+        link(rel='icon' type='image/png' sizes='16x16' href='/favicon_io/favicon-16x16.png')
+        link(rel='manifest' href='/favicon_io/site.webmanifest') 
+    body#profile
+        include ./header
+        #head
+            img(src="/images/profile.png" id = "pfp")
+            #name
+                h2#username #{username}
+            if myProfile
+                #settings 
+                    h3 Private Mode
+                    -var id = userID
+                        form(action='/users/'+ id  method = 'post')
+                            if (session.private)
+                                input(type="radio" value = "on" name="privacy" checked)
+                                label(for="on") ON
+                                br
+                                input(type="radio" value = "off" name="privacy")
+                                label(for="off") OFF
+                                br
+                                input(type="submit" value="Save Changes" id = "submit")             
+                            else 
+                                input(type="radio" value = "on" name="privacy")
+                                label(for="on") ON
+                                br
+                                input(type="radio" value = "off" name="privacy" checked)
+                                label(for="off") OFF
+                                br
+                                input(type="submit" value="Save Changes" id = "submit")   
+        #content 
+            .main#orderHist
+                h2 Order History
+                each order in orders 
+                    li.user 
+                        a(href='/orderPage/'+ order._id  class = 'userLink') #{order._id}
+
+
+
+        

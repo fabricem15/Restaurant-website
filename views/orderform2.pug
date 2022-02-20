@@ -1,0 +1,40 @@
+html 
+    head 
+        title Order Form
+        link(rel="stylesheet" href = "../css/order.css")
+        link(rel='apple-touch-icon' sizes='180x180' href='/favicon_io/apple-touch-icon.png')
+        link(rel='icon' type='image/png' sizes='32x32' href='/favicon_io/favicon-32x32.png')
+        link(rel='icon' type='image/png' sizes='16x16' href='/favicon_io/favicon-16x16.png')
+        link(rel='manifest' href='/favicon_io/site.webmanifest')
+    body(onload = "init()")
+        include ./header
+        #header
+            .left
+            .middle 
+                select#selection
+                    option(value = "" disabled selected) ---Select a restaurant---
+            .right
+                #info 
+
+        #container
+            .left
+                h2#categoryTitle.titles Categories
+                #links
+            .middle 
+                //- select#selection
+                //-     option(value = "" disabled selected) ---Select a restaurant---
+                h2#menuTitle.titles Menu
+                #menu
+            .right 
+                h2#orderTitle.titles Order Summary
+                #order
+           
+          
+        script(src = "/client.js") 
+        
+          
+
+
+        
+
+

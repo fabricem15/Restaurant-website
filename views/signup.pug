@@ -1,0 +1,30 @@
+html 
+    head 
+        link(rel = "stylesheet" href="../css/form.css")
+        title Sign Up!
+        link(href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet")
+
+    body
+        include ./header
+        #main
+         
+            #loginForm 
+                h2#title Sign up
+                if (authorized == false) 
+                    h4 Username already taken. Please choose another. 
+                form(action = "/signup" method = "post")
+                    label(for='username') Username 
+                    br
+                    input(type="text" placeholder="Enter Username" name= 'username' required)
+                    br
+                    label(for='password') Password
+                    br 
+                    input(type= "password" placeholder="Enter Password" name="password" required)
+                    br
+                    button(type="submit" id="submit") Sign up
+
+        script(src='../login.js')
+                   
+                   
+
+            

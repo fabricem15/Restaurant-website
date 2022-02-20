@@ -1,0 +1,31 @@
+html 
+    head 
+        link(rel = "stylesheet" href="../css/form.css")
+        title Log In
+        link(href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet")
+        link(rel='apple-touch-icon' sizes='180x180' href='/favicon_io/apple-touch-icon.png')
+        link(rel='icon' type='image/png' sizes='32x32' href='/favicon_io/favicon-32x32.png')
+        link(rel='icon' type='image/png' sizes='16x16' href='/favicon_io/favicon-16x16.png')
+        link(rel='manifest' href='/favicon_io/site.webmanifest') 
+
+    body#formBody
+        include ./header
+        #main   
+            #loginForm 
+                h2#title Welcome Back!
+                if (authorized == false) 
+                    h4 Invalid username/password. Try again.
+                form(action = "/login" method = "post")
+                    label(for='username') Username 
+                    br
+                    input(type="text" placeholder="Enter Username" name= 'username' required)
+                    br
+                    label(for='password') Password
+                    br 
+                    input(type= "password" placeholder="Enter Password" name="password" required)
+                    br
+                    button(type="submit" id="submit") Login
+                   
+                   
+
+            

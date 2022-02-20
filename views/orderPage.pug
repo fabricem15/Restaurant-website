@@ -1,0 +1,28 @@
+html 
+    head 
+        link(rel = "stylesheet" href="../css/users.css")
+        link(href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet")
+        link(rel='apple-touch-icon' sizes='180x180' href='/favicon_io/apple-touch-icon.png')
+        link(rel='icon' type='image/png' sizes='32x32' href='/favicon_io/favicon-32x32.png')
+        link(rel='icon' type='image/png' sizes='16x16' href='/favicon_io/favicon-16x16.png')
+        link(rel='manifest' href='/favicon_io/site.webmanifest') 
+        title Order Page
+    body
+        include ./header 
+        .main#orderPage 
+            h2 Restaurant ID: #{order.restaurantID}
+                hr
+                p Restaurant Name: #{order.restaurantName}
+                - var price = `${Number(order.subtotal).toFixed(2)}`
+                p Subtotal: $#{price}
+                - var price = `${Number(order.total).toFixed(2)}`
+                p Delivery Fee: $#{order.fee}
+                p Total: $#{price}
+
+                hr
+                each item in order.order
+                    p Item: #{item.name}
+                    p Quantity: #{item.quantity}
+                    hr
+                   
+        

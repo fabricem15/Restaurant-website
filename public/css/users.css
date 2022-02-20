@@ -1,0 +1,129 @@
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+#users #content {
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30em;
+    padding: 10px 10px;
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
+ul.users {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li.user {
+    list-style-type:none;
+    margin:10px;
+}
+a.userLink{
+    display: flex;
+    padding: 5px;
+    font-size: 12pt;
+    align-items: center;
+    
+    font-family: sans-serif;
+    border-bottom: 2px solid #8f8c8c;
+    text-decoration: none;
+    color: #0058c9;
+    font-weight: 800;
+}
+
+#orderPage p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 25vh;
+    background-color: #1455c9;
+}
+#pfp{
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    border-radius: 80px;
+
+}
+#mainContent {
+    display:block;
+
+}
+
+#username{
+
+    font-size: -webkit-xxx-large;
+    color: #ffed03;
+    font-variant-caps: petite-caps;
+    font-family: cursive;
+    font-weight: 600;
+    width: 500px;
+    text-align: center;
+
+}
+
+.main#orderHist{
+    align-items: center;
+}
+
+#profile #content{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+
+#settings {
+   
+    position: absolute;
+    right:20px;
+    width:150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+}
+
+#submit {
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: PT Sans;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: ease-out 0.5s box-shadow;
+    outline: none;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+#submit:hover {
+    border:none;
+    color: black;
+    box-shadow: inset 300px 0 0 0 rgb(255, 238, 0);
+}

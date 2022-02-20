@@ -1,0 +1,29 @@
+html 
+    head
+        title header 
+        link(rel="stylesheet" href = "/css/header.css")
+        link(href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet")
+        script(src = "https://kit.fontawesome.com/eba0886aa6.js" crossorigin = 'anonymous') 
+    body#body  
+        nav 
+            ul(class = 'headerLinks') 
+                li 
+                    a(href= '/' ) #[i(class = 'fas fa-home')] Home
+                li 
+                    a(href = '/users') #[i(class="fas fa-users")] Users
+                if (!session.loggedin)
+                    .right.head 
+                        li
+                            a(href = '/signup') #[i(class="fas fa-user-plus")] Sign Up
+                            li
+                            a(href = '/login') #[i(class="fas fa-sign-in-alt")] Login
+                else
+                    li 
+                        a(href= '/orderFood' ) #[i(class="fas fa-shopping-cart")] Order Food
+                    .right.head 
+                        li
+                            - var link = "/users/" + session.userID 
+                                a(href= link ) #[i(class="fas fa-address-card")] Profile
+                        li 
+                            a(href = '/logout') #[i(class="fas fa-sign-in-alt")] Logout
+

@@ -1,0 +1,109 @@
+
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+#main{
+    background-image: url("/images/welcome.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #faff0e;
+}
+dt{
+    font-size: 18px;
+}
+#restaurants{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30em;
+    height:auto;
+    margin-top: 15em;
+    padding: 10px 10px;
+    border:2px solid black;
+    border-radius: 10px;
+}
+.restLink {
+    display: flex;
+    border-radius: 5px;
+    margin:10px;
+    padding: 10px;
+    font-size: 12pt;
+    border: 2px solid black;
+}
+
+#content{
+    padding: 10px;    
+}
+h1 {
+    font-size: -webkit-xxx-large;
+    margin: auto;
+    font-family: cursive;
+    width: fit-content;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: initial;
+    margin: 0px;
+}
+input[type=text]{
+    padding:10px;
+    margin:10px 0;
+    border-radius: 10px;
+    border-color: rgb(2, 2, 20);
+    transition: .3s box-shadow;
+    height: 2.8em;
+    font-size: 15px;
+    font-family: PT Sans;
+}
+input:hover{
+    box-shadow:0 0 7px rgba(2, 27, 63, 0.637);
+}
+
+select {
+    padding:10px;
+    border-radius: 10px;
+    font-size: 15px;
+
+}
+button{
+    padding:10px;
+    margin:10px;
+    border-radius: 7px;
+    font-size:15px;
+    width: 10em;
+    height:3em;
+    border:none;
+    cursor: pointer;
+    background-color: black;
+    color:white;
+    box-shadow: inset 0 0 0 0 burlywood;
+    transition: ease-out 0.3s;
+    outline:none;
+}
+button:hover{
+  box-shadow: inset 10em 0 0 0 rgb(255, 238, 0);
+  color:black;
+  
+  
+} 
+.field{
+    font-weight: 700;
+    color: #111111;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: baseline;
+    width: 600px;
+    font-weight: 700;
+    color: #111111;
+    font-size: 24px;
+}
+a:hover{
+    color:#043bd3;
+}
+

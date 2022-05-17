@@ -2,7 +2,7 @@
 An Express-based full stack web application where users can browse from a variety of restaurants, add meals to their cart and place their order. 
 
 # Features
-- The backend uses Express to run the application, serve static files and render html pages.
+- The backend uses Express to run the application, serve static files and render HTML pages.
 - Pug is used as the Template Engine for this website.
 - Uses Mongoose and MongoDB for the database.
 - REST API 

@@ -16,9 +16,3 @@ An Express-based full stack web application where users can browse from a variet
 - Install project dependencies using `npm install`
 - Start the server by running `node server.js` in the terminal and go to http://localhost:3000 to interact with the webpage
  
-
-
-#### Design decisions ####
-
-- I used mongoose because of the flexibility it offers compared to regular MongoDB, including specifying Models 
-- I tried to make the page visually appealing to the client with matching colours and colour change on hover CSS properties. Also, added a favicon to make the website look more professional. 

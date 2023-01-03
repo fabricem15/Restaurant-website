@@ -7,7 +7,6 @@ An Express-based full stack web application where users can browse from a variet
 - Uses Mongoose and MongoDB for the database.
 - REST API 
 
-**Note: The website is only available locally at the moment. I will be hosting it online soon. Stay tuned for a demo!** 
 
 
 # Server startup (to be run locally)

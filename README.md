@@ -9,7 +9,7 @@ An Express-based full stack web application where users can browse from a variet
 
 
 
-# Server startup (to be run locally)
+# Server startup
 - Start the mongo daemon 
 - Run the database initiliazer file by typing the command `node database-initializer.js` in the terminal
 - Install project dependencies using `npm install`
